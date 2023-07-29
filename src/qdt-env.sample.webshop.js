@@ -8,6 +8,7 @@ let allowIndexing = false;
 let sessions = true;
 let activateFirstFund = false;
 let google_maps_api_key = '123';
+let apiUrl = "https://staging.api.forus.io/api/v1"
 
 const me_app_link = 'https://forus.io/DL';
 const ios_ipad_link = 'https://apps.apple.com/nl/app/me-forus/123';
