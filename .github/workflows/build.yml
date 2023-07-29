@@ -10,10 +10,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: pwd
-      - run: ls
-      - run: cd src && npm install
-      - run: cd src && npm rebuild node-sass
-      - run: cd src && gulp compile --timestamp --gitLog="gitlog" --gitHash
+      - run: npm install && npm rebuild node-sass
+        working-directory: src
+      - run: mv qdt-env.js.sample qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
+        working-directory: src
       - run: pwd && ls
-      - run: cd src && pwd && ls
