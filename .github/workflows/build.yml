@@ -16,6 +16,8 @@ jobs:
         working-directory: src
       - run: pwd && ls
         working-directory: dist
+      - run: rm website/provider/assets/video && rm website/validator/assets/video && rm website/sponsor/assets/video
+        working-directory: dist
 
       - uses: actions/upload-artifact@v3
         if: always()
