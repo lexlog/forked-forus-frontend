@@ -15,3 +15,12 @@ jobs:
       - run: mv qdt-env.sample.js qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
         working-directory: src
       - run: pwd && ls
+        working-directory: dist
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: frontend-sources
+          path: |
+            dist/*
+          retention-days: 5
