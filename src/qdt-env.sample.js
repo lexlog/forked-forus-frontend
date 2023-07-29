@@ -1,13 +1,13 @@
 let minify = true;
 let sourcemap = false;
 let baseImplementationKey = 'general';
-let chatId = 'fe0cd97da81f49594cefdb4807b20d6df2793db9ae5f6e26eabe354a4527d365';
-let chatIdSponsor = 'fe0cd97da81f49594cefdb4807b20d6df2793db9ae5f6e26eabe354a4527d365';
-let supportId = '15870000001861118?orgId=20065804523';
+let chatId = '123';
+let chatIdSponsor = '123';
+let supportId = '123';
 let allowIndexing = false;
 let sessions = true;
 let activateFirstFund = false;
-let google_maps_api_key = 'AIzaSyDY5FB1fHdhYsfc5VwtSku_hOqbzvOLKSc';
+let google_maps_api_key = '123';
 let apiUrl = "https://staging.api.forus.io/api/v1"
 
 const me_app_link = 'https://forus.io/DL';
@@ -38,11 +38,11 @@ module.exports = (core) => {
             ios_iphone_link: ios_iphone_link,
             help_link: help_link,
             aws_rum: {
-                id: "f4693c5c-a15d-4165-ae02-aab9ab090890",
+                id: "123",
                 config: {
                     sessionSampleRate: 1,
-                    guestRoleArn: "arn:aws:iam::942771420812:role/RUM-Monitor-eu-west-1-942771420812-8444649728361-Unauth", 
-                    identityPoolId: "eu-west-1:d20ce893-c51a-4bcf-96e0-7ed2ae6bfcb9",
+                    guestRoleArn: "123", 
+                    identityPoolId: "123",
                     endpoint: "https://dataplane.rum.eu-west-1.amazonaws.com",
                     telemetries: ["performance", "errors", "http"],
                     allowCookies: true, 
@@ -71,7 +71,7 @@ module.exports = (core) => {
             client_key: baseImplementationKey,
             panel_type: 'provider',
             chat_id: false,
-            support_id: '15870000002078017?orgId=20065804523',
+            support_id: '123',
             html5ModeEnabled: true,
             hide_voucher_generators: false,
             sessions: sessions,
@@ -83,11 +83,11 @@ module.exports = (core) => {
             supported_devices_link: supported_devices_link,
             help_link: help_link,
             aws_rum: {
-                id: "f4693c5c-a15d-4165-ae02-aab9ab090890",
+                id: "123",
                 config: {
                     sessionSampleRate: 1,
-                    guestRoleArn: "arn:aws:iam::942771420812:role/RUM-Monitor-eu-west-1-942771420812-8444649728361-Unauth", 
-                    identityPoolId: "eu-west-1:d20ce893-c51a-4bcf-96e0-7ed2ae6bfcb9",
+                    guestRoleArn: "123", 
+                    identityPoolId: "123",
                     endpoint: "https://dataplane.rum.eu-west-1.amazonaws.com",
                     telemetries: ["performance", "errors", "http"],
                     allowCookies: true, 
@@ -131,10 +131,10 @@ module.exports = (core) => {
             ios_iphone_link: ios_iphone_link,
             help_link: help_link,
             aws_rum: {
-                id: "f4693c5c-a15d-4165-ae02-aab9ab090890",
+                id: "123",
                 config: {
                     sessionSampleRate: 1,
-                    guestRoleArn: "arn:aws:iam::942771420812:role/RUM-Monitor-eu-west-1-942771420812-8444649728361-Unauth", 
+                    guestRoleArn: "123", 
                     identityPoolId: "eu-west-1:d20ce893-c51a-4bcf-96e0-7ed2ae6bfcb9",
                     endpoint: "https://dataplane.rum.eu-west-1.amazonaws.com",
                     telemetries: ["performance", "errors", "http"],
@@ -194,8 +194,8 @@ module.exports = (core) => {
             android_link: android_link,
             ios_ipad_link: ios_ipad_link,
             ios_iphone_link: ios_iphone_link,
-            ios_link: 'https://itunes.apple.com/nl/app/me-forus/id1422610676',
-            captcha_site_key: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+            ios_link: '123',
+            captcha_site_key: '123',
             html5Mode: {
                 basePath: '/'
             }
