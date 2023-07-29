@@ -4,19 +4,16 @@ on: [push]
 
 jobs:
   build:
-
-runs-on: ubuntu-latest
-
-steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - run: pwd
-    - run: ls
-    - run: cd src && npm install
-    - run: cd src && npm rebuild node-sass
-    - run: cd src && gulp compile --timestamp --gitLog="gitlog" --gitHash
-    - run: pwd && ls
-    - run: cd src && pwd && ls
-
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: pwd
+      - run: ls
+      - run: cd src && npm install
+      - run: cd src && npm rebuild node-sass
+      - run: cd src && gulp compile --timestamp --gitLog="gitlog" --gitHash
+      - run: pwd && ls
+      - run: cd src && pwd && ls
