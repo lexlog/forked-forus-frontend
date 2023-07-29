@@ -54,7 +54,7 @@ module.exports = (core) => {
             }
         });
 
-        platform.setDestRootPath(outputRoot + '/website/sponsor');
+        platform.setDestRootPath(outputRoot + '/dashboard_sponsor');
 
         platform.editTask('js', (task) => {
             task.minify = minify;
@@ -102,7 +102,7 @@ module.exports = (core) => {
             }
         });
 
-        platform.setDestRootPath(outputRoot + '/website/provider');
+        platform.setDestRootPath(outputRoot + '/dashboard_provider');
 
         platform.editTask('js', (task) => {
             task.minify = minify;
@@ -144,7 +144,7 @@ module.exports = (core) => {
             },
         });
 
-        platform.setDestRootPath(outputRoot + '/website/validator');
+        platform.setDestRootPath(outputRoot + '/dashboard_validator');
         
         platform.editTask('js', (task) => {
             task.minify = minify;
@@ -170,7 +170,7 @@ module.exports = (core) => {
             flags: {},
         });
 
-        platform.setDestRootPath(outputRoot + '/general');
+        platform.setDestRootPath(outputRoot + '/webshop_general');
         
         platform.editTask('js', (task) => {
             task.minify = minify;

@@ -14,8 +14,8 @@ jobs:
         working-directory: src
       - run: mv qdt-env.sample.js qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
         working-directory: src
-      - run: pwd && ls
-        working-directory: dist
+      - run: mv qdt-env.sample.webshop.js qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
+        working-directory: src
       - run: rm -rf website/provider/assets/video && rm -rf website/validator/assets/video && rm -rf website/sponsor/assets/video
         working-directory: dist
 
