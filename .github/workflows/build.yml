@@ -12,6 +12,6 @@ jobs:
           node-version: 18
       - run: npm install && npm rebuild node-sass
         working-directory: src
-      - run: mv qdt-env.js.sample qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
+      - run: mv qdt-env.sample.js qdt-env.js && gulp compile --timestamp --gitLog="gitlog" --gitHash
         working-directory: src
       - run: pwd && ls
