@@ -1,24 +1,22 @@
-name: Build Frontend
+name: Build
 
-on:
-  pull_request:
-    branches:
-    - develop
+on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
+
+runs-on: ubuntu-latest
+
+steps:
     - uses: actions/checkout@v3
-    - name: Compile frontends
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: 16.16
-    - name: Install gulp
-      run: npm install gulp
-    - name: Install dependencies
-      run: cd src && npm install
-    - name: Init
-      run: cd src && gulp init
-    - name: Build
-      run: cd src && gulp compile
+        node-version: 18
+    - run: pwd
+    - run: ls
+    - run: cd src && npm install
+    - run: cd src && npm rebuild node-sass
+    - run: cd src && gulp compile --timestamp --gitLog="gitlog" --gitHash
+    - run: pwd && ls
+    - run: cd src && pwd && ls
+
