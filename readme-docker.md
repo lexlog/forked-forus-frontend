@@ -13,7 +13,7 @@ Backend: [https://github.com/teamforus/forus-backend](https://github.com/teamfor
 ## Get the project from github
 First, you need to clone the project from GitHub:
 ```bashf
-git clone git@github.com:teamforus/forus-frontend.git forus-frontend
+git clone git@github.com:teamforus/forus-frontend.git forus-frontendd
 ```
 
 ### Checkout to the branch you want to test:
